@@ -1,0 +1,561 @@
+.justify-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.site-top{
+  width: 100%;
+}
+
+.logo {
+  transition: 1s;
+
+}
+
+.logo img{
+  width: clamp(5rem, 4rem, 9rem);
+  height: clamp(5rem, 4rem, 9rem);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+
+}
+
+.logo a h1{
+  margin-left: 20px;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.menu-content a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  transition: 1s;
+}
+
+.menu-content a:hover{
+ 
+  color: red;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+
+
+.menu-content ul{
+  list-style: none;
+  display: flex;
+  margin-left: 3.5rem ;
+
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  margin-left: 100px;
+  padding: 10px 20px 10px 20px;
+  background-color:#F65050;
+  
+  border-radius: 10px;
+
+  transition: 500ms;
+  
+}
+
+.contact:hover a{
+  background-color: black;
+  color:#F65050;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+
+.top button{
+  outline: none;
+  margin: 0px 100px 200px 200px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  
+  background-color: rgba(255, 255, 255, 0.425);
+  border: 1px solid black;
+}
+
+.top button:active{
+  border: 1px solid grey;
+  
+}
+
+.background {
+  
+  height: 900px;
+  background-image: url("../../assets/vetors1.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+
+.background .section-quem-somos {
+  width: 1100px;
+  margin-top: 30px;
+  text-align: left;
+ 
+}
+
+.background .section-quem-somos h2 {
+  font-size: 38px;
+  color: white;
+  font-family: 'Abril fatface', Times, serif;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15rem;
+  margin-bottom: 50px;
+
+}
+
+.background .section-quem-somos .text {
+  width: 600px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.background .section-quem-somos .text p{
+  font-size: 24px;
+}
+
+
+.background .icon img{
+  height: 450px;
+  padding: 0;
+  margin-right: 100px;
+}
+
+
+.background-services{
+  background-color: #0099FF;
+  width: 100%;
+  margin-top: 40px;
+  
+
+}
+
+.services {
+  display: flex;
+  align-items: center;
+}
+.services .shield-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .shield-service h3 {
+  margin-bottom: 100px;
+  font-size: 36px;
+  color: white;
+  font-family: 'Abril fatface';
+  letter-spacing: 0.3rem;
+}
+
+.services img{
+  margin: 50px 100px;
+  width: 150px;
+  height: 200px;
+}
+
+.services ul {
+  margin-top: 100px;
+}
+
+.services li {
+  list-style: none;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Goldman';
+
+  transition: 1s;
+}
+
+.services li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.como-funciona{
+  
+  background-color: #f86969;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.como-funciona .passo{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
+
+[data-anime]{
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-10px, 0px, 0px);
+}
+[data-anime="right"] {
+  transform: translate3d(10px, 0px, 0px);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+.como-funciona .passo img{
+  width: 250px;
+  height: 200px;
+  margin: 0px 45px;
+}
+
+.como-funciona .passo p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  width: 500px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-contact {
+  margin-top: 40px;
+  background-color: #0099FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.contact-email h3 {
+  margin: 0px 10px 420px 10px;
+  font-size: 44px;
+  color: white
+}
+
+.contact-email .img-contact img {
+  width: 350px;
+  height: 250px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.container-contact .txt-area {
+  margin-top: -40px;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+}
+.container-contact .txt-area textarea {
+
+  border-radius: 10px;
+  font-size: 24px;
+  height: 250px;
+  outline: none;
+
+}
+
+.container-contact .txt-area label {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-contact .buttons {
+  display: flex;
+  width: 980px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container-contact .buttons button{
+  outline: none;
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-style: none;
+  border-radius: 10px;
+  width: 180.06px;
+  height: 54.66px;
+  justify-content: center;
+  
+  transition: 1s;
+  
+ 
+ 
+
+}
+.container-contact .buttons .whatsapp {
+  background-color: #1ED763;
+  
+}
+
+.container-contact .buttons button:active {
+ border-style: solid;
+ border-left: 1px solid black;
+ border-right: 1px solid white;
+ border-top: 1px solid black;
+ border-bottom: 1px solid white;
+  
+}
+
+.container-contact .buttons .enviar {
+background-color: #224C8D;
+
+}
+.container-contact .buttons .enviar:hover {
+  background-color: #355586;
+}
+.container-contact .buttons button img{
+  width: 50px;
+  
+}
+
+.container-contact .buttons button:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .container{
+    width: 100%;
+  }
+
+  .top {
+    visibility: hidden;
+  }
+ 
+  .logo img{
+    width: clamp(2rem, 3rem, 4rem);
+    height: clamp(2rem, 3rem, 4rem);
+  }
+  
+  
+  .logo a h1{
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .menu-content a{
+    font-size: clamp(1rem, 1.1rem, 2rem);
+    padding: 8px;
+  }
+
+  .background .section-quem-somos {
+    width: 650px;
+    margin-top: 30px;
+    text-align: left;
+   
+  }
+
+  .background .section-quem-somos h2 {
+    font-size: 22px;
+    margin-left: 50px;
+  }
+
+  @media (max-width: 600px){
+    .background .section-quem-somos .text {
+      width: 400px;
+    }
+
+  }
+
+  .background .section-quem-somos .text {
+    width: 500px;
+    margin-left: 50px;
+
+  }
+  
+  .background .section-quem-somos .text p{
+    font-size: 18px;
+  }
+
+  .background .icon img{
+    height: 200px;
+    margin-left: 20px;
+
+  }
+
+  .services img{
+    margin: 50px 50px;
+
+  }
+  
+  .services ul {
+    margin-top: 100px;
+  }
+  
+  .services li {
+    font-size: 15px; 
+}
+
+.como-funciona{
+  
+  background-color: #f86969;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.como-funciona .passo{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
+
+.como-funciona .passo img{
+  width: 150px;
+  height: 140px;
+  margin: 0px 25px;
+}
+
+.como-funciona .passo p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  width: 500px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-email h3 {
+  margin: 0px 10px 420px 10px;
+  font-size: 34px;
+}
+
+.contact-email .img-contact img {
+  width: 300px;
+  height: 250px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.container-contact .txt-area {
+  margin-top: -40px;
+  width: 780px;
+  margin-left: 60px;
+}
+.container-contact .txt-area textarea {
+
+  border-radius: 10px;
+  font-size: 14px;
+  height: 250px;
+  outline: none;
+
+}
+
+
+}
+
+@media(max-width: 1100px) {
+  .logo img{
+    display: none;
+  }
+
+  .logo a h1{
+    display: none;
+  }
+  .menu-content a{
+    padding: 40px;
+    font-size: 1.8rem;
+  }
+  .background {
+    background-color: #0099FF;
+    background-image: none;
+   height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .background .section-quem-somos{
+    width: auto;
+    margin-top: 80px;
+  }
+}
+
+
+@media(max-width: 1000px){
+  .menu-content a{
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 800px){
+  .menu-content a{
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width: 400px){
+  .menu-content a{
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .contact a{
+    margin-left: 0px;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
