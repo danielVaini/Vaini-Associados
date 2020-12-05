@@ -1,0 +1,174 @@
+.container-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  background-color:#0099FF;
+  
+}
+
+.container-contact h3{
+  font-size: 32px;
+  color: white;
+}
+
+.container-contact .container-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.container-contact  .container-input .contact-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+  
+}
+
+.container-contact .container-input  .img-contact img {
+  height: 240px;
+  margin-left: 200px;
+}
+
+.container-contact  .text-area  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-contact  .text-area textarea {
+  width: 800px;
+  height: 400px;
+  
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-left: -100px;
+
+  
+  text-align: justify;
+}
+    
+.container-contact  textarea:focus {
+  border: 1px solid black;
+}
+
+.container-contact .buttons {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-contact .buttons button{
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  border-style: none;
+  margin-bottom: 40px;
+}
+
+.container-contact .buttons .btn-submit{
+  background-color: #224C8D;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+
+.container-contact .buttons .btn-submit:active{
+  border-style: none;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  
+}
+
+.container-contact .buttons .btn-whatsapp{
+  background-color: #1ED763;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.container-contact .buttons .btn-whatsapp:active{
+  border-style: none;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+
+@media(max-width: 1100px){
+  .container-contact .container-input  .img-contact img {
+    height: 240px;
+    margin-left: 50px;
+  }
+
+  .container-contact .text-area textarea {
+    width: 400px;
+    margin-left: -350px;
+  }
+
+  .container-contact .buttons {
+    width: 500px;
+  }
+}
+
+@media(max-width: 820px){
+  .container-contact .container-input  .img-contact img {
+    display: none;
+  }
+
+  .container-contact  .text-area textarea {
+    margin-left: -100px;
+  }
+
+}
+@media(max-width: 550px){
+  
+  .container-contact .text-area textarea {
+    width: 200px; 
+    height: 200px;
+  }
+
+  .container-contact .buttons {
+    width: 300px;
+  }
+
+
+}
+@media(max-width: 380px){
+  .container-contact .buttons {
+    flex-direction: column;
+    width: 100px;
+  }
+}
+
+
+@media(max-width: 280px){
+  
+  .container-contact .text-area textarea {
+    width: 200px;
+    height: 200px;
+    margin-left: 2px;
+  }
+
+
+}

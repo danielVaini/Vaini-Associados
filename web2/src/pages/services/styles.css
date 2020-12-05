@@ -1,0 +1,116 @@
+.container-service  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+}
+
+.container-service .service-section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  
+  background-color: #0099FF;
+}
+
+.container-service .service-section .service-title{
+  margin-top: 40px;
+}
+
+.container-service .service-section .service-title h2{
+  font-size: 2rem;
+  color: white;
+}
+
+.container-service .service-section .service-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  transition: 1s;
+}
+
+.container-service .service-section .service-names ul{ 
+
+}
+    
+.container-service .service-section .service-names ul li{
+  
+  font-size: 1.4rem;
+  margin-top: 40px;
+  list-style: none;
+  margin-left: 10px;
+
+  transition: 1s;
+} 
+
+.container-service .service-section .service-names ul li:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.container-service .service-section .service-names ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.container-service .service-section .service-names .icon-service {
+  margin: 0px 200px;
+  transition: 1s;
+}
+
+[data-anime]{
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-10px, 0px, 0px);
+}
+[data-anime="right"] {
+  transform: translate3d(10px, 0px, 0px);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+@media(max-width: 900px){
+  .container-service .service-section .service-names .icon-service {
+    margin: 0px 100px;
+  }
+
+
+  .container-service .service-section .service-names ul li a{
+  
+   font-size: 1rem;
+  } 
+}
+
+
+@media(max-width: 650px){
+  .container-service .service-section .service-names {
+    flex-direction: column;
+  }
+
+  .container-service .service-section .service-names ul li{
+  
+    margin-bottom: 50px;
+  } 
+}
+
+@media(max-width: 330px){
+  .container-service .service-section .service-names .icon-service {
+    display: none;
+  }
+}

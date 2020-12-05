@@ -1,0 +1,67 @@
+.container-como-funciona {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #f86969;
+}
+hr{
+  width: 50%;
+  margin: 20px 0px;
+  color: black;
+}
+.container-como-funciona .passos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-como-funciona .passos-container img{
+  height: 200px;
+  transition: 1s;
+}
+
+.container-como-funciona .passos-container h2{
+  font-size: 32px;
+  color: white;
+  margin-top: 20px;
+}
+
+
+.container-como-funciona .passos-container .passo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 40px;
+  transition: 1s;
+}
+
+.container-como-funciona .passos-container .passo p{
+  text-align: justify;
+  width: 40%;
+  margin: 0px 40px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+@media (max-width: 500px){
+  .container-como-funciona .passos-container .passo {
+    flex-direction: column-reverse;
+  }
+  
+  .container-como-funciona .passos-container img{
+    height: 100px;
+  }
+
+
+  .container-como-funciona .passos-container .passo p{
+    text-align: justify;
+    width: 40%;
+    margin: 0px 20px;
+    font-size: 1rem;
+    
+  }
+}

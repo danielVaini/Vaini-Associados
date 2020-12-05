@@ -1,0 +1,184 @@
+[data-anime]{
+  opacity: 0;
+  transition: .9s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-10px, 0px, 0px);
+}
+[data-anime="right"] {
+  transform: translate3d(10px, 0px, 0px);
+}
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.container .nav-menu nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: inherit;  
+  
+}
+
+.container .nav-menu nav img{
+  height: 80px;
+  transition: 500ms;
+}
+
+.container .nav-menu nav img:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container .nav-menu nav ul{
+  display: flex;
+  flex-wrap: inherit;  
+  width: 100%;
+}
+
+.container .nav-menu nav ul li{
+  list-style: none;
+  margin-left: 100px;
+  transition: 500ms;
+
+}
+.container .nav-menu nav ul li a{
+  text-decoration: none;
+  font-size: clamp(1rem, 1.2rem, 1.4rem);
+  padding: 10px;
+  font-weight: 600;
+  color: black;
+
+  transition: 500ms;
+}
+
+.container .nav-menu nav ul li:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container .nav-menu nav ul li a:hover{
+  color: #F65050;
+
+}
+
+.container .nav-menu .contact a{
+  
+  background-color: #F65050;
+  border-style: none;
+  border-radius: 15px;
+  
+  transition: 500ms;
+}
+
+.container .nav-menu .contact a:hover{
+  color: #F65050;
+  background-color: black;
+}
+
+/* Mobile */
+
+.container .container-mobile {
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+
+.container .nav-menu .container-mobile .menu-mobile {
+  width: 100vw;
+  display: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  
+}
+
+.container .nav-menu .menu-mobile button{
+  background-color: #F65050;
+  transition: 500ms;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  border-radius: 10px;
+}
+.container .nav-menu .menu-mobile button:hover{
+  background-color: black;
+  color: #F65050;
+  
+  
+}
+
+.container .nav-menu .menu-mobile .mobile {
+  display: none;
+  transition: 1s;
+ 
+}
+.container .nav-menu .container-mobile .menu-mobile .mobile ul {
+  display: block;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+.container .nav-menu .menu-mobile .mobile ul li{
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+.container .container-mobile .menu-mobile .btn-closed{
+  display: none;
+}
+
+@media(max-width: 1000px){
+  .container .nav-menu  nav img{
+    display: none;
+  }
+  .container .nav-menu nav ul li{
+    margin-left: 40px;
+  }
+
+  .container .nav-menu nav ul li a{ 
+    font-size: clamp(0.5rem, 0.9rem, 1rem);
+    padding: 5px;
+  }
+}
+
+
+@media(max-width: 500px){
+  .menu-item  {
+    display: none;
+  }
+  .container .nav-menu nav ul{
+    display: none;
+  }
+
+  .container .container-mobile {
+    display: flex;
+
+  }
+  
+  .container .nav-menu .container-mobile .menu-mobile {
+    display: flex;
+    margin-left: 80%;
+  }
+
+  .container .nav-menu .container-mobile .menu-mobile .mobile ul li{
+   width: 80%;
+  }
+
+  .container .container-mobile .menu-mobile .btn-closed{
+    margin-right: 80%;
+  }
+
+}
