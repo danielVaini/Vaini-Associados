@@ -19,4 +19,4 @@ Um projeto simples, porém que forneceu grandes conhecimentos.
 ![Imagem do front da pagina](https://github.com/danielVaini/Vaini-Associados/blob/main/web2/src/assets/Vaini-associados.png)
 
 
-![Hospedado no Netlify](https://hopeful-dubinsky-cb0f8c.netlify.app/)
+[Hospedado no Netlify](https://hopeful-dubinsky-cb0f8c.netlify.app/)
